@@ -1,0 +1,11 @@
+{
+  "string": "hoge",
+  "list": [
+    "hoge",
+    "fuga"
+  ],
+  "map": {
+    "hoge": "fuga",
+    "fuga": "piyo"
+  }
+}
