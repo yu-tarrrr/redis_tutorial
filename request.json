@@ -1,11 +1,11 @@
 {
-  "string": "hoge",
+  "string": "太郎",
   "list": [
-    "hoge",
-    "fuga"
+    "二郎",
+    "三郎"
   ],
   "map": {
-    "hoge": "fuga",
-    "fuga": "piyo"
+    "田中": "太郎",
+    "山田": "二郎"
   }
 }
