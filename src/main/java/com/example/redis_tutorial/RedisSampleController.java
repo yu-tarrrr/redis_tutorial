@@ -12,7 +12,11 @@ public class RedisSampleController {
     @Autowired
     private StringRedisTemplate redisTemplate;
 
-    @PostMapping
+    /**
+     * 登録用
+     * @param redisSampleData リクエストDTO
+     */
+    @PostMapping("/post")
     public void post(@RequestBody RedisSampleData redisSampleData) {
         redisTemplate.delete("redis-tutorial:string");
         redisTemplate.opsForValue()
@@ -26,7 +30,11 @@ public class RedisSampleController {
                 .putAll("redis-tutorial:map", redisSampleData.getMap());
     }
 
-    @GetMapping
+    /**
+     * 取得用
+     * @return
+     */
+    @GetMapping("/get")
     public RedisSampleData get() {
         RedisSampleData redisSampleData = new RedisSampleData();
         redisSampleData.setString(
